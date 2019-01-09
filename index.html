@@ -3,14 +3,69 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="page-header"><div class="text-center text-white h1">Welcome to Crystal Collector!!!</div></div>
+            <div class ="jumbotron">
+                <div class="row">
+                    <span>wins: <span id="wins">0</span></span>
+                </div>
+                <div class="row">
+                        <span>losses: <span id="losses">0</span></span>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-center">Your Score: <span id="score"></span></div>
+                    </div>
+                    <div class = "col-6">
+                        <div class="text-center">Score to achieve: <span id="tomeet"></span></div>
+                    </div>
+                </div>
+            </div>
+
+                <br>
+                <br>
+
+                <div class="row mx-0 align-self-center">
+                    <div class="col"> 
+                        <button class="btn btn-default" id="bluebtn">
+                            <img src="assets/images/bluegem.jpg" height="200px" width="200px">
+                        </button>
+                    </div>
+                
+                
+                    <div class="col">
+                        <button class="btn btn-default"  id="greenbtn">
+                            <img src="assets/images/greengem.jpg" height="200px" width="200px">
+                        </button>
+                    </div>
+                
+                
+                    <div class="col">
+                        <button class="btn btn-default" id="purplebtn">
+                            <img src="assets/images/purplegem.jpg" height="200px" width="200px">
+                        </button>
+                    </div>
+                
+                
+                    <div class="col">
+                        <button class="btn btn-default" id="pinkbtn">
+                            <img src="assets/images/pinkgem.jpg" height="200px" width="200px">
+                        </button>
+                    </div>
+                </div>
+            
+    </div>
 </body>
 </html>
